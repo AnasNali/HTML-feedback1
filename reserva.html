@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reserva</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<a name="reserva"></a>
+
+<h1 align="center">Restaurante Nali's</h1>
+
+<center>
+	<a href="index.html">Presentación</a>
+	<a href="menus.html">Menús</a>
+	<a href="reserva.html">Reserva</a>
+	<a href="instalaciones.html">Instalaciones</a>
+</center>
+
+<hr>
+
+<center>
+<form name="Reserva" action="mailto:anas_nali@hotmail.com" method="post" enctype="text/plain">
+	<label for="nombre_reserva"><b>Nombre completo:</b></label>
+	<input type="text" name="nombre_reserva" required>
+
+<p>
+<b>Fechas disponibles:</b>
+<input type="date" id="start" name="fecha-reserva"
+       value="2020-10-28"
+       min="2020-10-28" max="2020-11-08">
+
+<select name="hora">
+	<option>19</option>
+	<option>20</option>
+	<option>21</option>
+	<option>22</option>
+	<option>23</option>
+	<option>00</option>
+</select>
+<select name="minutos">
+	<option>00</option>
+	<option>15</option>
+	<option>30</option>
+	<option>45</option>
+</select>
+</p>
+
+<b>Numero de telefono:</b>
+<input type="tel" id="phone" name="phone" placeholder="612345678" pattern="[0-9]{9}" required>
+
+<p>
+<b>Numero de comensales:</b>
+<input type="number" name="comensales" min="1" required>
+</p>
+
+<p>
+<b>¿Donde le gustría que se le ubique?</b>
+<input type="radio" id="interior" name="mesa" value="Mesa en el interior">
+<label for="interior"><a href=" instalaciones.html #restaurante_interior" target="_blank">Mesa en el interior</a></label>
+<input type="radio" id="terrraza" name="mesa" value="Mesa en la terraza">
+<label for="terraza"><a href=" instalaciones.html #restaurante_patio" target="_blank">Mesa en el patio</a></label>
+</p>
+
+<p>
+<b>Parking:</b><input type="checkbox" name="parking">
+</p>
+
+<b>Peticiones especiales:</b>
+<textarea rows="3" name="peticiones" placeholder="Escriba aquí..."></textarea>
+
+<p>
+<input type="submit" name="Reservar">
+</p>
+</form>
+</center>
+</body>
+</html>
